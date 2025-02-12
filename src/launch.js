@@ -22,3 +22,17 @@ export function Launch(url){
 
     win.document.querySelector("embed").src = url
 }
+
+/** @type {HTMLFormElement} */
+let customUrlForm;
+/** @type {HTMLInputElement} */
+let customUrl;
+export function Init(){
+    customUrlForm = document.querySelector("#custom-url-form")
+    customUrl = document.querySelector("#custom-url")
+    customUrlForm.addEventListener("submit", LaunchCustomURL)
+}
+function LaunchCustomURL(ev){
+    ev.preventDefault()
+    Launch(customUrl.value)
+}

@@ -1,7 +1,12 @@
-import * as constants from './constants.js'
 import indexHtml from './_index.html'
 import styleCss from './_style.css'
+import noChromiumHtml from './_no_chromium.html'
+
+import * as constants from './constants.js'
 import * as games from './games.js'
+import * as launch from './launch.js'
+
+let isChromium = !!window.chrome;
 
 window.addEventListener("beforeunload", (ev)=>{
     ev.returnValue = "a"
@@ -9,8 +14,11 @@ window.addEventListener("beforeunload", (ev)=>{
     return "aa"
 })
 
-document.body.innerHTML = indexHtml
+document.body.innerHTML = isChromium?indexHtml:noChromiumHtml
 document.querySelector("#style").innerHTML = styleCss
 
-games.Init()
-games.AppendAllGames()
+if(isChromium){
+    launch.Init()
+    games.Init()
+    games.AppendAllGames()
+}
