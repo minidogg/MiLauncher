@@ -66,7 +66,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _con
   \***********************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   Launch: () => (/* binding */ Launch)\n/* harmony export */ });\nfunction Launch(url){\r\n    \r\n}\n\n//# sourceURL=webpack://milauncher/./src/launch.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   Launch: () => (/* binding */ Launch)\n/* harmony export */ });\nfunction Launch(url){\r\n    let win = window.open(\"https://classroom.google.com\")\r\n    win.document.write(/*html*/`\r\n        <body style=\"margin:0;\">\r\n            <title>Home</title>\r\n\r\n            <embed src=\"https://hexbois.com\" style=\"width:100vw;height:100vh;\">\r\n\r\n            <script>\r\n            window.addEventListener(\"beforeunload\", (ev)=>{\r\n                ev.returnValue = \"a\"\r\n                ev.preventDefault()\r\n                return \"aa\"\r\n            })\r\n            </script>\r\n        </body>\r\n    `)\r\n    let icon = win.document.createElement(\"link\")\r\n    icon.rel = \"icon\"\r\n    icon.href = \"https://www.gstatic.com/classroom/ic_product_classroom_144.png\"\r\n    win.document.head.appendChild(icon)\r\n\r\n\r\n}\n\n//# sourceURL=webpack://milauncher/./src/launch.js?");
 
 /***/ })
 
