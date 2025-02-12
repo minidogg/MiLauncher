@@ -1,7 +1,8 @@
 import { Launch } from "./launch.js"
 
 export let games_data = [
-    {name: "Hexbois", link:"https://hexbois.com", img:"https://hexbois.com/img/logo-curved-large.png"}
+    {name: "Hexbois", link:"https://hexbois.com", img:"https://hexbois.com/img/logo-curved-large.png"},
+    {name: "Voxorp", link:"https://voxorp.com", img: "https://voxorp.com/images/icon.png"}
 ]
 
 function CreateGameEl({name, link, img}){

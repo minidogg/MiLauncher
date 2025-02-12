@@ -18,7 +18,7 @@ export function Launch(url){
     let icon = win.document.createElement("link")
     icon.rel = "icon"
     icon.href = "https://www.gstatic.com/classroom/ic_product_classroom_144.png"
-    win.document.head.appendChild(icon)
+    win.document.head.appendChild(icon);
 
-
+    win.document.querySelector("embed").src = url
 }
