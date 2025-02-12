@@ -32,12 +32,12 @@ body{
 
     transition: filter 0.2s ease-in-out;
 }
-.game-cover{
+.game img{
     width:90%;
     display: block;
     margin:auto;
 }
-.game-title{
+.game p{
     text-align: center;
     margin:1px 1px 4px 1px;
     font-size:16px;
