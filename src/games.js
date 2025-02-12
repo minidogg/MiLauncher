@@ -1,9 +1,6 @@
 import { Launch } from "./launch.js"
 
-export let games_data = [
-    {name: "Hexbois", link:"https://hexbois.com", img:"https://hexbois.com/img/logo-curved-large.png"},
-    {name: "Voxorp", link:"https://voxorp.com", img: "https://voxorp.com/images/icon.png"}
-]
+import data from './data.json'
 
 function CreateGameEl({name, link, img}){
     let div = document.createElement("div")
@@ -25,7 +22,9 @@ function CreateGameEl({name, link, img}){
 export function AppendAllGames(){
     const gameDivEl = document.querySelector("#games")
 
-    games_data.forEach(game=>{
+    console.log(data.game_data)
+
+    data.game_data.forEach(game=>{
         console.log(game)
         let el = CreateGameEl(game)
         gameDivEl.appendChild(el)
