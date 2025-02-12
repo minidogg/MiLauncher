@@ -49,3 +49,17 @@ body{
 .game:hover{
     filter:brightness(120%);
 }
+
+input[type=text]{
+    all:unset;
+    background-color: rgba(0,0,0,0.5);
+    margin:5px;
+    padding:10px;
+    border-radius: 100vw;
+    height:15px;
+}
+#search{
+    display:block;
+    margin:auto;
+    width:50%;
+}

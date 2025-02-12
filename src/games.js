@@ -19,13 +19,27 @@ function CreateGameEl({name, link, img}){
     return div
 }
 
+/** @type {HTMLDivElement} */
+let gameDivEl;
+export function Init(){
+    gameDivEl = document.querySelector("#games")
+    InitSearch()
+}
+
+/** @type {HTMLInputElement} */
+let searchInput;
+function InitSearch(){
+    searchInput = document.querySelector("#search")
+    searchInput.addEventListener("change", ()=>{
+        let query = searchInput.value.toLowerCase()
+        Array.from(gameDivEl.children).forEach(child=>{
+            child.style.display = child.querySelector("p").textContent.toLowerCase().includes(query)?"block":"none"
+        })
+    })
+}
+
 export function AppendAllGames(){
-    const gameDivEl = document.querySelector("#games")
-
-    console.log(data.game_data)
-
     data.game_data.forEach(game=>{
-        console.log(game)
         let el = CreateGameEl(game)
         gameDivEl.appendChild(el)
     })

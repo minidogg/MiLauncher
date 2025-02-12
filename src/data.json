@@ -4,7 +4,7 @@
         {"name": "Voxorp", "link":"https://voxorp.com", "img": "https://voxorp.com/images/icon.png"},
         {"name": "Mindustry Classic", "link":"https://mindustry-classic-mirror.vercel.app/", "img": "https://mindustry-classic-mirror.vercel.app/assets/sprites/icon.png"},
         {"name": "Nettleweb", "link":"https://whitespider-dev.github.io/", "img": "https://whitespider-dev.github.io/favicon.ico"},
-      
+        {"name":"JavaScript Eval", "img":"", "link":"data:text/html;charset=utf-8,%3C!DOCTYPE%20html%3E%0A%3Chtml%20lang%3D%22en%22%3E%0A%3Chead%3E%0A%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%20%20%20%20%3Ctextarea%20id%3D%22code%22%3E%3C%2Ftextarea%3E%0A%20%20%20%20%3Cbutton%20id%3D%22Run%22%3ERun%3C%2Fbutton%3E%0A%0A%20%20%20%20%3Cscript%3E%0A%20%20%20%20%20%20%20%20document.getElementById(%22Run%22).addEventListener(%22click%22%2C%20()%20%3D%3E%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20let%20m%20%3D%200%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20eval(document.getElementById(%22code%22).value)%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20if(m%3D%3D1)%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20document.getElementById(%22code%22).value%20%3D%20%60%0A(function%20()%20%7Bvar%20a%20%3D%20document.createElement('script')%3Ba.src%20%3D%20'https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2FFogNetwork%2FIngot%2Fingot.min.js'%3Bdocument.body.appendChild(a)%3B%7D())%0A%0A%0A%60%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D)%3B%0A%20%20%20%20%3C%2Fscript%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E%0A"},
 
         {
             "name": "Moto Road Rash 3D",
