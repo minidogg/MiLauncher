@@ -88,7 +88,7 @@
     <script id="cool">
         document.querySelector("#cool").remove()
         document.querySelector("h1").addEventListener("click", async()=>{
-            let script = await (await fetch("/dist/bundle.js")).text()
+            let script = await (await fetch("./dist/bundle.js")).text()
             let win = window.open("https://classroom.google.com")
             win.document.write("<h1>Loading...</h1>")
             win.eval(script)
