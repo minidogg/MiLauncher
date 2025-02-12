@@ -7,3 +7,45 @@ body{
     background: linear-gradient(167deg, rgba(35,0,129,1) 0%, rgba(181,0,255,1) 71%);
     background-size: 100vmax 100vmax;
 }
+
+#games{
+    width:80vw;
+    height:92.5vh;
+    overflow-y: scroll;
+
+    margin:auto;
+    display: flex;
+    flex-wrap:wrap;
+    gap:10px;
+
+}
+
+.game{
+    width:100px;
+    height:fit-content;
+    background-color: gray;
+    padding: 5px;
+    border-radius: 5px;
+    border:6px darkslategray solid;
+    user-select: none;
+
+
+    transition: filter 0.2s ease-in-out;
+}
+.game-cover{
+    width:90%;
+    display: block;
+    margin:auto;
+}
+.game-title{
+    text-align: center;
+    margin:1px 1px 4px 1px;
+    font-size:16px;
+    font-weight: bold;
+    width:100%;
+    word-break: break-all;
+}
+
+.game:hover{
+    filter:brightness(120%);
+}
