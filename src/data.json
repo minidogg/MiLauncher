@@ -8,7 +8,8 @@
         {"name":"3kh0 Lite", "img":"https://lite.3kh0.net//favicon.ico", "link":"https://lite.3kh0.net/"},
         {"name":"WebGL Math", "img":"https://webglmath.github.io/resource/webglmathlogo.png", "link":"https://webglmath.github.io/"},
         {"name":"shs games", "img":"https://shsgames.github.io/icon.png", "link":"https://shsgames.github.io/"},
-        {"name":"Eaglercraft", "img":"https://shsgames.github.io/icon.png", "link":"https://shsgames.github.io/"},
+        {"name":"Eaglercraft", "img":"https://eaglercraft.com/img/favicon.png", "link":"https://eaglercraft.com"},
+        {"name":"SPLP", "img":"https://splp.vercel.app/favicon.ico", "link":"https://splp.vercel.app"},
 
         
         {
