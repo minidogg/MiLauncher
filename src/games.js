@@ -2,7 +2,7 @@ import { Launch } from "./launch.js"
 
 import data from './data.json'
 
-function CreateGameEl({name, link, img}){
+function CreateGameEl({name, link, img, standardBlank}){
     let div = document.createElement("div")
     div.classList.add("game")
 
@@ -14,7 +14,7 @@ function CreateGameEl({name, link, img}){
     title.textContent = name
     div.appendChild(title)
 
-    div.addEventListener("click", ()=>{Launch(link)})
+    div.addEventListener("click", ()=>{Launch(link, standardBlank)})
 
     return div
 }

@@ -1,5 +1,5 @@
-export function Launch(url){
-    let win = window.open("https://classroom.google.com")
+export function Launch(url, standardBlank=false){
+    let win = window.open(standardBlank?"about:blank":"https://classroom.google.com")
     win.document.write(/*html*/`
         <body style="margin:0;">
             <title>Home</title>
