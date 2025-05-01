@@ -1,6 +1,15 @@
 import { Launch } from "./launch.js"
 
-import data from './data.json'
+import dataLocal from './data.json'
+let data = dataLocal
+let dataRemote = await (await fetch("https://minidogg.github.io/MiLauncher/src/data.json")).json()
+if(dataRemote.game_data.length > data.game_data.length){
+    for(let dataRemoteGame of dataRemote.game_data){
+        if(!data.game_data.some(game=>game.link == dataRemoteGame.link)){
+            data.game_data.push(dataRemoteGame)
+        }
+    }
+}
 
 function CreateGameEl({name, link, img, standardBlank}){
     let div = document.createElement("div")
